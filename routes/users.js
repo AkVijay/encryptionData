@@ -11,7 +11,7 @@ var Promise = require('bluebird');
 
 router.post('/register', (req, res)=> {
 
-        var username = `ishanarora`;
+        var username = req.body.username;
         var password = md5(req.body.password);
         var apiReference = {
                 module: 'users',
@@ -34,10 +34,10 @@ router.post('/register', (req, res)=> {
 
 
 router.post('/login', (req, res)=> {
-        
+
         console.log(req.headers.host);
-        
-        var username = `ishanarora`;
+
+        var username = req.body.username;
         var password = md5(req.body.password);
         var apiReference = {
                 module: 'users',
