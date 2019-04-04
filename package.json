@@ -6,6 +6,7 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
+    "any-eval": "^1.0.0",
     "bluebird": "^3.5.3",
     "body-parser": "~1.18.2",
     "bytenode": "^1.0.2",

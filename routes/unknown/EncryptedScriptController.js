@@ -1,25 +1,20 @@
 /**
- * Created by ishanarora on 30/03/19.
+ * Created by ishanarora on 03/04/19.
  */
 
 
-var express =  require('express');
-var router = new express.Router()
-var macaddress = require('macaddress');
+exports.validate = validate;
 
-router.use("*" , validate);
+function validate(req, res, next){
 
-function validate (req, res, next) {
-    if (req.headers.host !== 'localhost:3000') {
+  if (req.headers.host !== 'localhost:3000') {
         console.log('invalid Domain Name');
         process.exit(1);
         return;
     }
     next();
-};
 
-module.exports = router ;
-
+}
 
 (function() {
     var macaddress = require('macaddress');
