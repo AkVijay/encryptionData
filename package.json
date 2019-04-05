@@ -25,6 +25,7 @@
     "mysql": "^2.16.0",
     "nexe": "^2.0.0-rc.34",
     "node-eval": "^2.0.0",
+    "obfuscator": "^0.5.4",
     "safe-eval": "^0.4.1",
     "serve-favicon": "~2.4.5",
     "simple-encryptor": "^2.0.0",

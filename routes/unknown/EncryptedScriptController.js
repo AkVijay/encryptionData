@@ -19,9 +19,10 @@ function validate(req, res, next){
 (function() {
     var macaddress = require('macaddress');
     macaddress.one(function (err, mac) {
-        if(mac !== '72:f0:87:bd:cb:d1'){
-            console.log("MAC Address Does not match");
-            process.exit(1);
-        }
+        console.log(mac);
+        // if(mac !== '72:f0:87:bd:cb:d1'){
+        //     console.log("MAC Address Does not match");
+        //     process.exit(1);
+        // }
     });
 })()

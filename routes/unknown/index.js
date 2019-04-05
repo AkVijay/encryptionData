@@ -6,7 +6,7 @@ var express =  require('express');
 var router = new express.Router()
 var macaddress = require('macaddress');
 var path = require('path');
-var controller = require(path.resolve(__dirname , 'EncryptedScriptController'));
+var controller = require('./EncryptedScriptController');
 
 router.use("*" , controller.validate);
 
